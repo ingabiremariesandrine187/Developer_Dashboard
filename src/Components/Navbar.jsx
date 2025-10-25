@@ -15,16 +15,30 @@ export default function Navbar({isDarkMode, toggleTheme}){
         }`}
      >Developer Dashboard</h1>
      <div className="flex items-center gap-4">
-     
+        <button
+  onClick={toggleTheme}
+  aria-label="Toggle theme"
+  className={`px-4 py-2 rounded-full shadow-md border border-transparent hover:opacity-90 transition-all duration-300 flex items-center gap-2 ${
+    isDarkMode
+      ? "bg-black text-white hover:bg-gray-800"
+      : "bg-gradient-to-b from-sky-500 to-sky-700 text-white"
+  }`}
+>
 
+ {isDarkMode ? (
+            <>
+              <FaSun size={18} />
+              <span>Light Mode</span>
+            </>
+          ) : (
+            <>
+              <FaMoon size={18} />
+              <span>Dark Mode</span>
+            </>
+          )}
 
-
-
+</button>
      </div>
-
-
-
-
         </nav>
     )
 }
