@@ -71,3 +71,13 @@ WeatherCard – Shows live weather info
 
 App – Handles overall layout, theme state, and API integration
 
+
+
+
+
+
+
+
+
+deployed Link:https://developer-dashboard-three.vercel.app/
+
