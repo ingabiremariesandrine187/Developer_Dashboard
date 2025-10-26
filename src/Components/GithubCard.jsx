@@ -86,7 +86,59 @@ className="w-20 h-20 rounded-full border-2 border-black-500 object-cover"
 </div>
 </div>
 {/* Stats Section */}
+<div className="mt-6 grid grid-cols-3 gap-4 text-center">
 
+      <div>
+          <p
+            className={`text-2xl font-extrabold ${
+              isDarkMode ? "text-blue-400" : "text-blue-600"
+            }`}
+          >
+            {data.public_repos}
+          </p>
+          <p
+            className={`text-sm ${
+              isDarkMode ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
+            Repos
+          </p>
+        </div>
+
+            <div>
+          <p
+            className={`text-2xl font-extrabold ${
+              isDarkMode ? "text-blue-400" : "text-blue-600"
+            }`}
+          >
+            {data.followers}
+          </p>
+          <p
+            className={`text-sm ${
+              isDarkMode ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
+            Followers
+          </p>
+        </div>
+
+              <div>
+          <p
+            className={`text-2xl font-extrabold ${
+              isDarkMode ? "text-blue-400" : "text-blue-600"
+            }`}
+          >
+            {data.following}
+          </p>
+          <p
+            className={`text-sm ${
+              isDarkMode ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
+            Following
+          </p>
+        </div>
+</div>
 
 
   </div>
